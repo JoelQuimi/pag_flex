@@ -1,1 +1,1 @@
-Un blog realizadon con flex-boc
+Un blog realizadon con flex-box
