@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+    background-color: wheat;
+}
+div,body, header,nav,ul.footer{
+    box-sizing: border-box;
+}
+.main-wrapper, header, footer{
+    width: 100%;
+}
+h1,h2,h3,h4{
+    text-wrap: balance;
+}
+p{
+    text-wrap: pretty;
+}
+/* HEADER */
+.header{
+    background-color: #48e;
+}
+.main-wrapper{
+    max-width: 1240px;
+}
+.main-navbar ul{
+    display: flex;
+    padding: 0;
+}
+
+.main-navbar li{
+    list-style: none;
+    margin: 5px;
+}
+.main-navbar a{
+    color:aliceblue;
+    display: inline-block;
+    padding: 5px;
+    
+}
+nav a{
+    text-decoration: none;
+}
+
+/*MAIN SECTION*/
+
+.main-wrapper{
+    display: flex;
+    flex-grow: 1;
+    gap:5px;
+}
+aside, main{
+    padding: 8px 18px;
+    background-color: white;
+}
+.main-wrapper aside{
+    flex-grow: 1;
+}
+.secondary-navbar{
+    min-width: 200px;
+    text-align: center;
+}
+.secondary-navbar ul{
+    padding: 0;
+}
+.secondary-navbar li{
+    list-style: none;
+}
+.secondary-navbar a{
+    color: #48e;
+    display: inline-block;
+    padding: 6px 10px;
+}
+.aside:last-child{
+    min-width: 10rem;
+}
+
+/*footer*/
+footer{
+    margin-top: auto;
+    border: 1px solid #333 ;
+    background-color: #333;
+    color: white;
+    padding: 40px;
+}
+@media screen and (max-width: 800px){
+    aside:last-child{
+        display: none;
+        
+    }
+}
+@media screen and (max-width: 600px){
+    .main-wrapper{
+        flex-direction: column;
+        
+    }
+}
